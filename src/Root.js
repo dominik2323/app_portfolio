@@ -14,7 +14,7 @@ import { GoogleAnalytics } from './ga/GoogleAnalytics'
 class Root extends Component {
   componentDidMount() {
     const { loadData } = this.props
-    return (loadData(), GoogleAnalytics())
+    return ( loadData(), GoogleAnalytics() )
   }
   render() {
     const { isLoading } = this.props
@@ -37,5 +37,5 @@ class Root extends Component {
     loadData() {
       dispatch(dataLoader())
     }
-  }),
+  })
 )(Root))

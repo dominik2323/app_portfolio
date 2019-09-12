@@ -31,6 +31,6 @@ export const AwardContainer = styled.div`
 	left: 54px;
 `
 export const ProjectContainer = styled(Col)`
-	height: ${ props => props.height === 'big' ? 900 : 700 }px;
+	height: ${ props => props.height === 'big' ? 700 : 400 }px;
 	margin-bottom: 30px;
 `

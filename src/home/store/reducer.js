@@ -11,7 +11,7 @@ const defaultState = {
 	"projectData": [],
 	"orderData": [],
 	"contactOpened": false,
-	"filterProjects": 'featured',
+	"filterProjects": 'all',
 	"loading": true
 }
 

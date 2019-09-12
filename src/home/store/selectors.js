@@ -44,7 +44,7 @@ export const selectSimpleProjects = createSelector(
 			R.map(x => 
 				R.merge(
 					R.map(simpleProjects, getProjectData)[x.id - 1],
-					{ size: x.size }
+					{ size: x.size, aspectRatio: x.aspect }
 				), selectActiveOrder
 			)
 		)

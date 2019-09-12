@@ -3,6 +3,12 @@ import { scheme } from '../../../consts/scheme'
 import { Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
+export const CoverPhoto = styled.img`
+	@media (max-width: 768px) {
+		min-height: 700px;
+	}
+`
+
 export const Footer = styled(Link)`
 	padding: 30px 60px;
 	display: inline-block;
@@ -42,28 +48,4 @@ export const ProjectContent = styled(Col)`
 		object-fit: cover;
 	}
 `
-export const ImageTitle = styled.div`
-	position: absolute;
-	bottom: 30px;
-	left: 45px;
-	font-size: 19px;
-	letter-spacing: .03em;
-	h1 {
-		font-size: 20px;
-		letter-spacing: .04em;
-	}
-	p {
-		font-size: 14px;
-		letter-spacing: .07em;
-		margin: 0;
-	}
-	${ props => props.inverse && css`
-		color: ${ scheme.white }
-		h1 {
-			letter-spacing: .07em;
-		}
-		h2 {
-			letter-spacing: .1em;
-		}
-	`}
-`
+

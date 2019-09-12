@@ -10,7 +10,8 @@ const RenderGridVideo = ({ data }) => {
 	      	poster={ window.location.origin + '/public' + data.cover }
 	      	src={ window.location.origin + '/public' + data.src }
 	      	startTime={ data.startTime }
-	      	autoPlay={ data.autoPlay }>
+	      	autoPlay={ data.autoPlay }
+	      	style={{ minHeight: '500px' }}>
 	    <ControlBar autoHide={ true } />
 	    <BigPlayButton position="center" />
 	    </Player>

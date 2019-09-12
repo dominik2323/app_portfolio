@@ -5,6 +5,7 @@ import Project from './Project/'
 import SelectProject from './SelectProject/'
 import ErrProject from './Project/Components/ErrProject'
 import About from './About'
+import Tmp from './Tmp'
 
 const Selectcontent = ({ isLoading }) => {
 	if (isLoading) return null 
@@ -14,6 +15,7 @@ const Selectcontent = ({ isLoading }) => {
 				<Route exact path="/" component={ SelectProject } />
 	      		<Route exact path="/project/:projectId" component={ Project } />
 	      		<Route exact path="/about" component={ About } />
+	      		<Route exact path="/tmp" component={ Tmp } />
 	      		<Route component={ ErrProject } />
 			</Switch>
 		</div>
